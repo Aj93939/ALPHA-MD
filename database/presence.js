@@ -4,7 +4,7 @@ const { DataTypes } = require('sequelize');
 const PresenceDB = config.DATABASE.define('presence', {
     status: {
         type: DataTypes.STRING,
-        defaultValue: 'available', // 'available', 'composing', 'recording'
+        defaultValue: 'available',
         allowNull: false
     },
     isActive: {
@@ -55,3 +55,4 @@ module.exports = {
     updatePresenceSettings,
     PresenceDB
 };
+Add presence.js module
